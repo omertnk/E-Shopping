@@ -36,6 +36,7 @@ html::-webkit-scrollbar-thumb{
 background-color: #363232;
 border-radius: 3rem;
 }
+
 body {
 background-color: var(--main-color);
 height: 200;
@@ -109,32 +110,25 @@ margin-right: 2rem; /* İkonları sola yaklaştırmak için sağdan boşluk */
 background-color: transparent;
 }
 
-
-
-
-
-/* CONTACT US PAGE */
-/* CONTACT US PAGE */
-/* CONTACT US PAGE */
-/* CONTACT US PAGE */
-/* CONTACT US PAGE */
 /* CONTACT US PAGE */
 
 .contact-header {
   position: relative;
-  height: 70vh;
+  height: 100vh;
   background-image: url('../assets/images/c3.webp');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: -15rem;
   padding: 2rem 5%;
   color: #fff;
 }
 
 .contact-header h1 {
-  background: rgba(0, 0, 0, 0.6);
+  background: #5d462c;
+  opacity: 75%;
   padding: 1rem;
   border-radius: 5px;
   margin: 0;
@@ -182,6 +176,7 @@ background-color: transparent;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   height: 100%; 
 }
+
 .contact-info h2, .follow-us h2, .form h2 {
   color: #5d462c;
   font-size: 2.5rem;
