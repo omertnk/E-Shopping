@@ -8,59 +8,107 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Hairdresser Supplies</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
     <!-- header section start -->
     <header class="header">
         <a href="#" class="logo">
-            <img src="images/logo.png" alt="logo" />
+            <img src="assets/images/logo.png" alt="logo" />
         </a>
-        <!-- Üst bar için linkler -->
+
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
+            <a href="home.html" class="">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contact_us.html">Contact</a>
         </nav>
 
         <div class="buttons">
             <button>
-                <i class="fas fa-search"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
             <button>
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
             </button>
-            <button>
-                <i class="fas fa-bars"></i>
-            </button>
-
         </div>
+
     </header>
     <!-- header section end -->
 
     <!-- home section start -->
     <section class="home">
-       <div class="content">
-        <h3>CUT YOUR HAIR</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa magnam vero repudiandae qui, ea sint corrupti
-            voluptatem laborum vel, delectus ad consectetur laboriosam tempora nulla aliquid magni saepe omnis
-            voluptates?</p>
-            <a href="#" class="btn">Order Now</a>
-       </div>
+        <div class="content">
+            <h3>Your Hairdresser Supplies Needs Are Here</h3>
+            <p>Are you a hairdresser? Do you want to improve yourself at home? Are you a course that wants to provide
+                employment? The materials you are looking for are here.
+            </p>
+            <a href="#" class="btn"> Order Now</a>
+        </div>
     </section>
     <!-- home section end -->
 
-    <!-- menu section start -->
-    <section class="menu">
+    <!-- categories section start -->
+    <section class="categories">
+        <h1 class="heading">Our <span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="assets/images/haircaree.jfif" alt="Hair Care" />
+                    <h3>Hair Care</h3>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">
+                        Check Out
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="assets/images/duzz.png" alt="Straighteners" />
+                    <h3>Curling Irons and Straighteners</h3>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">
+                        Check Out
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="assets/images/brush.png" alt="Brushes" />
+                    <h3>Brushes</h3>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">
+                        Check Out
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="assets/images/colors.jfif" alt="Hair Dyes" />
+                    <h3>Box Dyes</h3>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">
+                        Check Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- categories section end -->
+
+    <!-- highlights section start -->
+    <section class="highlights">
         <h1 class="heading">Our <span>Products</span></h1>
         <div class="box-container">
             <div class="box">
                 <div class="box-head">
-                    <img src="images/menu-1.png" alt="menu">
-                    <span class="menu-category">PIZZA</span>
-                    <h3>6 Miniz Pizzas</h3>
+                    <img src="assets/images/sac_kurutma_2.jpeg" alt="menu">
+                    <span class="highlights-category">Electric Tools</span>
+                    <h3>Hair Dryer</h3>
                     <div class="price">$104.99 <span>119.99</span></div>
                 </div>
                 <div class="box-bottom">
@@ -69,9 +117,9 @@
             </div>
             <div class="box">
                 <div class="box-head">
-                    <img src="images/menu-2.png" alt="menu">
-                    <span class="menu-category">Burger</span>
-                    <h3>6 Miniz Pizzas</h3>
+                    <img src="assets/images/sac_kopuk_2.jpeg" alt="menu">
+                    <span class="highlights-category">Hair Styling Products</span>
+                    <h3>Hair Spray</h3>
                     <div class="price">$104.99 <span>119.99</span></div>
                 </div>
                 <div class="box-bottom">
@@ -80,9 +128,9 @@
             </div>
             <div class="box">
                 <div class="box-head">
-                    <img src="images/menu-3.png" alt="menu">
-                    <span class="menu-category">pizza</span>
-                    <h3>6 Miniz Pizzas</h3>
+                    <img src="assets/images/sampuan_2.jpeg" alt="menu">
+                    <span class="highlights-category">Hair Care</span>
+                    <h3>Shampoo</h3>
                     <div class="price">$104.99 <span>119.99</span></div>
                 </div>
                 <div class="box-bottom">
@@ -91,9 +139,9 @@
             </div>
             <div class="box">
                 <div class="box-head">
-                    <img src="images/menu-4.png" alt="menu">
-                    <span class="menu-category">burger</span>
-                    <h3>6 Miniz Pizzas</h3>
+                    <img src="assets/images/sac_sprey_2.jpeg" alt="menu">
+                    <span class="highlights-category">Hair Care</span>
+                    <h3>Hair Mousse</h3>
                     <div class="price">$104.99 <span>119.99</span></div>
                 </div>
                 <div class="box-bottom">
@@ -102,77 +150,9 @@
             </div>
            
         </div>
-    </section>
-    <!-- menu section end -->
+    </section>  
+    <!-- highlights section end -->
 
-    <!-- products section start -->
-     <section class="products">
-        <h1 class="heading">Our <span>Products</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="box-head">
-                    <span class="title">Mini Burger</span>
-                    <a href="#" class="name">Bacon Burger</a>
-                </div>
-                <div class="image">
-                    <img src="images/product-1.png" alt="">
-                </div>
-                <div class="box-bottom">
-                    <div class="info">
-                        <b class="prive">$24.00</b>
-                        <span class="amount">110gr / 300 Cal</span>
-                    </div>
-                    <div class="product-btn">
-                        <a href="#">
-                            <i class="fas fa-plus"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-head">
-                    <span class="title">Mini Burger</span>
-                    <a href="#" class="name">Bacon Burger</a>
-                </div>
-                <div class="image">
-                    <img src="images/product-2.png" alt="">
-                </div>
-                <div class="box-bottom">
-                    <div class="info">
-                        <b class="prive">$24.00</b>
-                        <span class="amount">110gr / 300 Cal</span>
-                    </div>
-                    <div class="product-btn">
-                        <a href="#">
-                            <i class="fas fa-plus"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-head">
-                    <span class="title">Mini Burger</span>
-                    <a href="#" class="name">Bacon Burger</a>
-                </div>
-                <div class="image">
-                    <img src="images/product-3.png" alt="">
-                </div>
-                <div class="box-bottom">
-                    <div class="info">
-                        <b class="prive">$24.00</b>
-                        <span class="amount">110gr / 300 Cal</span>
-                    </div>
-                    <div class="product-btn">
-                        <a href="#">
-                            <i class="fas fa-plus"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-     </section>     
-    <!-- products section end -->
 </body>
 
 </html>

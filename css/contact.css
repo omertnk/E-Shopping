@@ -1,0 +1,283 @@
+:root {
+  --main-color: white;
+--black-color: #0e0e0e;
+--border: 0.1rem solid rgba(255, 255, 255, 0.371);
+}
+
+* {
+font-family: "Montserrat", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: 0.2s ease;
+}
+
+html {
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-padding-top: 9rem;
+scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+width:0.8rem;
+background-color: white;
+}
+html::-webkit-scrollbar-track{
+background-color: transparent;
+border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-thumb{
+background-color: #363232;
+border-radius: 3rem;
+}
+body {
+background-color: var(--main-color);
+height: 200;
+}
+
+section{
+padding: 3.5rem 7%;
+}
+
+.btn{
+margin-top:1rem;
+display: inline-block;
+padding: 2rem 3.75rem;
+border-radius:30rem;
+font-size:1.7rem;
+color:#fff;
+background-color: #5d462c;
+cursor:pointer;
+margin-left: 5rem;
+}
+
+.btn:hover{
+opacity: 0.8;
+}
+.title {
+font-size: 2rem;
+}
+
+.logo img {
+height: 5rem; /* Logonun boyutunu küçülttüm */
+margin-left: 3rem; /* Logoyu sağa taşıdım */
+}
+
+.header .logo img {
+height: 8rem; /* Header içindeki logonun boyutunu küçülttüm */
+}
+
+
+.header {
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0.7%;
+margin: 2rem 7%;
+border-radius: 30rem;
+box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.368);
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.header .navbar .active,
+.header .navbar a {
+margin: 0 1rem;
+font-size: 1.6rem;
+color: #5d462c;
+border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar a:hover {
+border-bottom: 0.1rem solid var(--black-color); /* Altı çizili hover efekti */
+padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+cursor: pointer;
+font-size: 2.5rem;
+margin-left: 2rem;
+margin-right: 2rem; /* İkonları sola yaklaştırmak için sağdan boşluk */
+background-color: transparent;
+}
+
+
+
+
+
+/* CONTACT US PAGE */
+/* CONTACT US PAGE */
+/* CONTACT US PAGE */
+/* CONTACT US PAGE */
+/* CONTACT US PAGE */
+/* CONTACT US PAGE */
+
+.contact-header {
+  position: relative;
+  height: 70vh;
+  background-image: url('../assets/images/c3.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 5%;
+  color: #fff;
+}
+
+.contact-header h1 {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0;
+  font-size: 4rem;
+  
+}
+
+.contact {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: stretch; 
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info, .follow-us {
+  flex: 1; 
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.right-column {
+  flex: 1;
+}
+
+.form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%; 
+}
+.contact-info h2, .follow-us h2, .form h2 {
+  color: #5d462c;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  border-bottom: 3px solid #5d462c;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-info p, .follow-us p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #5d462c;
+  margin-bottom: 0.5rem;
+  text-transform:none;
+}
+
+.follow-us a {
+  text-decoration: none;
+  color: #3b2e1d;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.follow-us a:hover {
+  color: #5d462c;
+}
+
+.contact-info, .follow-us {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: #5d462c;
+  font-size: 2.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3b2e1d;
+  transform: scale(1.1);
+}
+
+
+.form label, .form-group label {
+  font-size: 1rem;
+  color: #5d462c;
+  display: block;
+  margin-top: 1rem;
+}
+
+.form input, .form textarea, .form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus, .form textarea:focus, .form-group input:focus {
+  border-color: #5d462c;
+}
+
+.form textarea {
+  resize: none;
+  height: 10rem;
+}
+
+.form-group-inline {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group-inline .form-group {
+  flex: 1;
+}
+
+.contact .btn {
+  background-color: #5d462c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.contact .btn:hover {
+  background-color: #3b2e1d;
+}

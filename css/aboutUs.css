@@ -1,0 +1,218 @@
+/* Global reset */
+:root {
+    --main-color: white;
+  --black-color: #0e0e0e;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.371);
+  }
+  
+  * {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+  }
+  
+  html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar{
+  width:0.8rem;
+  background-color: white;
+  }
+  html::-webkit-scrollbar-track{
+  background-color: transparent;
+  border-radius: 3rem;
+  }
+  
+  html::-webkit-scrollbar-thumb{
+  background-color: #363232;
+  border-radius: 3rem;
+  }
+  body {
+  background-color: var(--main-color);
+  height: 200;
+  }
+  
+  section{
+  padding: 3.5rem 7%;
+  }
+  
+
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius:30rem;
+    font-size:1.7rem;
+    color:#fff;
+    background-color: #5d462c;
+    cursor:pointer;
+    margin-left: 5rem;
+    }
+    
+    .btn:hover{
+    opacity: 0.8;
+    }
+    .title {
+    font-size: 2rem;
+    }
+    
+    .logo img {
+    height: 5rem; /* Logonun boyutunu küçülttüm */
+    margin-left: 3rem; /* Logoyu sağa taşıdım */
+    }
+    
+    .header .logo img {
+    height: 8rem; /* Header içindeki logonun boyutunu küçülttüm */
+    }
+    
+    
+    .header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.368);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+    
+    .header .navbar .active,
+    .header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #5d462c;
+    border-bottom: 0.1rem solid transparent;
+    }
+    
+    .header .navbar a:hover {
+    border-bottom: 0.1rem solid var(--black-color); /* Altı çizili hover efekti */
+    padding-bottom: 0.5rem;
+    }
+    
+    .header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem; /* İkonları sola yaklaştırmak için sağdan boşluk */
+    background-color: transparent;
+    }
+
+/* Slider */
+/* Slider */
+body, .slider {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: 100vw; /* Tarayıcı genişliğini tamamen kaplar */
+    height: 30vh; /* İstediğiniz yüksekliğe göre ayarlayın */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Ortalamasını sağlar */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100vw; /* Her slayt tam genişliği kaplar */
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Kenar boşlukları olmadan tam dolgu sağlar */
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+}
+
+.caption h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.caption p {
+    font-size: 24px;
+}
+
+/* Navigation buttons */
+.navigation {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.prev, .next {
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Active slide */
+.slides .active {
+    transform: translateX(0%);
+}
+
+/* About section */
+.about {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+.about .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #c77d36;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
